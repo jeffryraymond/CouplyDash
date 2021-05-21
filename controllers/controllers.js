@@ -1,13 +1,6 @@
 // Grab firestore db instance
 const { db } = require('./../util/admin');
 
-// Example call
-const hello = (request, response, next) => {
-  response.status(200).json({
-        body: 'Hello from the server!'
-  });
-}
-
 // Get analytics function
 const getAnalytics = (request, response, next) => {
   db
@@ -27,4 +20,3 @@ const getAnalytics = (request, response, next) => {
 }
 
 module.exports.getAnalytics = getAnalytics;
-module.exports.hello = hello;
